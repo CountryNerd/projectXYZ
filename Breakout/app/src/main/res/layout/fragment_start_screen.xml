@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.countrynerd.breakout.StartScreen">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/txtTitle"
+        android:background="#FFF8E1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Start"
+            android:id="@+id/btnStart"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:height="36dp"
+            android:textColor="#FFF"
+            android:background="#2196F3"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/howtoplay"
+            android:id="@+id/btnHowToPlay"
+            android:layout_below="@+id/btnStart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:height="36dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#FFF"
+            android:background="#2196F3"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Settings"
+            android:id="@+id/btnSettings"
+            android:layout_marginTop="48dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_below="@+id/btnHowToPlay"
+            android:layout_centerHorizontal="true"
+            android:height="36dp"
+            android:background="#2196F3"
+            android:textColor="#FFF"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/Titles"
+            android:contentDescription="@string/BreakoutImg"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:cropToPadding="false"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            />
+
+    </RelativeLayout>
+</FrameLayout>
